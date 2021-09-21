@@ -2,5 +2,5 @@
 
 
 ## Team names
-Kesavan Shanmugasundaram (Aesthetics)
-Joel Shaji (Technical)
+* Kesavan Shanmugasundaram (Aesthetics)
+* Joel Shaji (Technical)
