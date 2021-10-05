@@ -312,7 +312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: 19.0508}
+  m_AnchoredPosition: {x: 13.29, y: 19.0508}
   m_SizeDelta: {x: 318.987, y: 87.9645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1149216944
@@ -337,8 +337,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Set me free
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -424,6 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4eaf5cad685bc4bb88c85f83717b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 1536247953}
   wobbleAmplitude: 100
 --- !u!114 &1149216947
 MonoBehaviour:
