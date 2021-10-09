@@ -45,6 +45,10 @@ public class TextEffect : MonoBehaviour
 
         RectTransform rect = textMesh.rectTransform;
   
+        /*
+         * WILL STILL NEED THIS PART TO CONVERT
+         * MOUSE POSITION TO THE CANVAS' PLANE
+         */
         Vector2 anchorPos;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(rect, currentMousePos, null, out anchorPos);
         currentMousePos = anchorPos;
@@ -65,21 +69,36 @@ public class TextEffect : MonoBehaviour
 
             int index = c.vertexIndex;
 
+            /*
+             * WOBBLE CAN BE BROGHT OVER
+             * REPLACE 'i' WITH RANDOM INTERGER
+             */
             Vector3 offset = Wobble(Time.time + i);
            
             //A letter will stick to the mouse if pressed
+
+            /*
+             * WILL STILL NEED SOMETHING TO TEST FOR MOUSE INPUT
+             */
             if (Input.GetMouseButton(0))
             {
                 //Updates the previous offset based on the mouse's movement
                 deltaMousePos = currentMousePos - previousMousePos;
                 previousOffset[i] += deltaMousePos;
 
+                /*
+                 * CAN USE BUILD IN UNITY 2D COLLISION INSTEAD
+                 */
                 if (AABBCollision(currentMousePos, vertices[index] + previousOffset[i], vertices[index + 2] + previousOffset[i]))
                 {
 
                     float xDistance = (Mathf.Abs(vertices[index].x - vertices[index + 2].x) / 2);
                     float yDistance = (Mathf.Abs(vertices[index].y - vertices[index + 2].y) / 2);
 
+                    /*
+                     * WILL ADJUST TEXT BASED ON POSITION INSTEAD OF VERTICIES
+                     * WILL ONLY NEED CURRENT MOUSE POS
+                     */
                     ////Bottom Left
                     vertices[index] = currentMousePos + new Vector3(-xDistance, -yDistance, 0.0f);
                     ////Top Left
@@ -95,6 +114,10 @@ public class TextEffect : MonoBehaviour
 
             //Moves an entire letter based on the offset
 
+            /*
+             * OFFSET CAN BE BROUGHT OVER
+             * ADJUST THE POSITION OF THE UI ELEMENT INSTEAD OF EACH VERTICE
+             */
             //Bottom Left
             vertices[index] += offset;
             //Top Left
