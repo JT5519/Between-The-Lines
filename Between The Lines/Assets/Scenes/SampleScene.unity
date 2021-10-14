@@ -3084,6 +3084,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1536247954}
     m_Modifications:
+    - target: {fileID: 295531395458779434, guid: 410aa8f9bc331284581426f7819396ea, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 384
+      objectReference: {fileID: 0}
+    - target: {fileID: 295531395458779434, guid: 410aa8f9bc331284581426f7819396ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 448484212068133232, guid: 410aa8f9bc331284581426f7819396ea, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 448484212068133232, guid: 410aa8f9bc331284581426f7819396ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 337
+      objectReference: {fileID: 0}
+    - target: {fileID: 448484212068133232, guid: 410aa8f9bc331284581426f7819396ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 73
+      objectReference: {fileID: 0}
     - target: {fileID: 458540942162706546, guid: 410aa8f9bc331284581426f7819396ea, type: 3}
       propertyPath: m_Name
       value: Background
