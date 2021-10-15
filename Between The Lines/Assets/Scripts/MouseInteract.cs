@@ -11,7 +11,10 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     
     //rect transform of the current textmesh
     private RectTransform rect;
-    
+
+    //Canvas Group
+    private CanvasGroup canvasGroup;
+
     //static variable that is used to ensure the cursor only grabs one letter at a time. 
     // TRUE = A particular letter is held, FALSE = No Letter is held
     private static bool cursorHoldsALetter;
@@ -20,7 +23,9 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     private void Start()
     {
+        canvas = transform.parent.parent.GetComponent<Canvas>();
         rect = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
   
     //event handler when item is grabbed by the mouse
@@ -31,6 +36,7 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         {
             cursorHoldsALetter = true;
             iAmTheLetterHeldByCursor = true;
+            canvasGroup.blocksRaycasts = false;
         }
     }
     //event handler when grabbed item is dragged by the mouse
@@ -51,7 +57,7 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         {
             cursorHoldsALetter = false;
             iAmTheLetterHeldByCursor = false;
-
+            canvasGroup.blocksRaycasts = true;
         }
     }
 }
