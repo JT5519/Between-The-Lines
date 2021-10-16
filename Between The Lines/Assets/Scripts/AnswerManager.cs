@@ -6,7 +6,7 @@ public class AnswerManager : MonoBehaviour
 {
     public char[] answers1;
     public char[] answerSlots;
-    private bool beenSolved = false; //For current testing
+    public bool beenSolved = false; //For current testing
 
     // Start is called before the first frame update
     void Start()
