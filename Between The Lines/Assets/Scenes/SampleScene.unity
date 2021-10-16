@@ -844,7 +844,52 @@ PrefabInstance:
       propertyPath: m_Name
       value: Letter Group
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1927916486620162891, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486153966345, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485078554249, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486475128549, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485428292192, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485448478751, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486464628303, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485844938578, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485445369853, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486620162892, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486153966346, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485078554250, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486475128550, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485428292193, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485448478736, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486464628288, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485844938579, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485445369854, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486620162893, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486153966347, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485078554251, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486475128551, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485428292194, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485448478737, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486464628289, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485844938580, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485445369855, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486620162894, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486153966348, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485078554252, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486475128472, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485428292195, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485448478738, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486464628290, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485844938581, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485445369840, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486620162895, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486153966349, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485078554253, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486475128473, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485428292196, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485448478739, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916486464628291, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485844938582, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
+    - {fileID: 1927916485445369841, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 33274edc3d21b1b4b9a42363644fa7ac, type: 3}
 --- !u!224 &1990900571 stripped
 RectTransform:
