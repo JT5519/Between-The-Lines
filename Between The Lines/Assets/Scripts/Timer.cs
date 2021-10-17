@@ -7,11 +7,14 @@ public class Timer : MonoBehaviour
 {
     private TextMeshProUGUI timerText;
     public float timer;
+    private bool gameOver;
+
     //public float timerLimitSeconds;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameOver = false;
         timerText = GetComponent<TextMeshProUGUI>();
         //timer = timerLimitSeconds;
     }
@@ -19,7 +22,9 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer > 0)
+        gameOver = GameObject.Find("GameManager").GetComponent<GameManager>().gameOver;
+
+        if (timer > 0 && !gameOver)
         {
             timer -= Time.deltaTime;
 
@@ -27,6 +32,10 @@ public class Timer : MonoBehaviour
             float seconds = Mathf.FloorToInt(timer % 60);
 
             timerText.text = minutes + ":" + seconds;
+        }
+        else if (gameOver)
+        {
+            timer += Time.deltaTime;
         }
         else
         {
