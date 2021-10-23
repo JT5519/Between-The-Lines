@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class TextScramble : MonoBehaviour
+public class AnswerScrambler : MonoBehaviour
 {
     [SerializeField] TMP_Text[] textMesh; //array of text meshes to be wobbled
     [SerializeField] float wobbleAmplitude; //Wobble intensity
