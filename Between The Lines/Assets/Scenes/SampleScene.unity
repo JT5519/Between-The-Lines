@@ -1234,6 +1234,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1536247954}
     m_Modifications:
+    - target: {fileID: 8269262081595359224, guid: b3d555e84a225fe49a694193bf75dbc7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269262082419694968, guid: b3d555e84a225fe49a694193bf75dbc7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269262082832397775, guid: b3d555e84a225fe49a694193bf75dbc7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8269262082959545636, guid: b3d555e84a225fe49a694193bf75dbc7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -60
+      objectReference: {fileID: 0}
     - target: {fileID: 8269262083228793350, guid: b3d555e84a225fe49a694193bf75dbc7, type: 3}
       propertyPath: m_Name
       value: AnswerManager
