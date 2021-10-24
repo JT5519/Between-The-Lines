@@ -20,6 +20,8 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private static bool cursorHoldsALetter;
     // private variable for each textmesh to know whether it is the letter held by the cursor
     private bool iAmTheLetterHeldByCursor;
+    // private variable to test 
+    private bool letterInPlace;
 
     private void Start()
     {
@@ -37,6 +39,7 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             cursorHoldsALetter = true;
             iAmTheLetterHeldByCursor = true;
             canvasGroup.blocksRaycasts = false;
+            letterInPlace = false;
         }
     }
     //event handler when grabbed item is dragged by the mouse
@@ -60,4 +63,16 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             canvasGroup.blocksRaycasts = true;
         }
     }
+
+    public bool GetLetterHeldByCursor()
+    {
+        return iAmTheLetterHeldByCursor;
+    }
+
+    public bool GetLetterInPlace()
+    {
+        return letterInPlace;
+    }
+
+    public void SetLetterInPlace() => letterInPlace = true;
 }
