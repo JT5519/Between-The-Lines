@@ -16,7 +16,7 @@ public class Shockwave : MonoBehaviour
     public float timerWhenWaveAbsent; //timer used when shockwave is absent
     public float timerWhenWavePresent; //timer when shockwave is present
 
-    [HideInInspector] public HashSet<GameObject> objectsShockwaveCollidesWith; 
+    [HideInInspector] public HashSet<GameObject> objectsShockwaveCollidesWith;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +41,8 @@ public class Shockwave : MonoBehaviour
         {
             //Get Mouse Pos
             Vector3 mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
+            mousePos.z = 10;
+            mousePos = Camera.main.ScreenToWorldPoint(mousePos); 
             //Spawn the Shockwave
             wave = Instantiate(shockwavePrefab, mousePos, Quaternion.identity);
 
@@ -58,7 +58,7 @@ public class Shockwave : MonoBehaviour
             if (wave.transform.localScale.x < shockwaveMaxSize)            
             {
                 wave.transform.localScale += new Vector3(Time.deltaTime * shockwaveSpeed, Time.deltaTime * shockwaveSpeed, 0);
-                //wave.GetComponent<CircleCollider2D>().radius = wave.transform.localScale.x / 2;
+                wave.GetComponent<CircleCollider2D>().radius = wave.transform.localScale.x / 2;
             }
             else if(timerWhenWavePresent < shockwaveHangTime)
             {
