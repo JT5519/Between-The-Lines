@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
+    path: Assets/Scenes/ShockwaveTutorial.unity
     guid: 293001aa53108f74bb0b48c7399e7624
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity

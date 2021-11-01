@@ -9,6 +9,8 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private Text[] tutorialText;
     [SerializeField] private Text textPlaceHold;
 
+    [SerializeField] private int levelToTransition = 1;
+
     private int tutorialIndex = 0;
 
     private void Start()
@@ -35,7 +37,7 @@ public class TutorialManager : MonoBehaviour
         //Load main game at the end of the tutorial
         if(tutorialIndex >= tutorialText.Length - 1)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(levelToTransition);
         }
         else
         {

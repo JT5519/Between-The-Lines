@@ -952,6 +952,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 768740977}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
+      propertyPath: levelToTransition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.size
       value: 7
       objectReference: {fileID: 0}
