@@ -5,7 +5,8 @@ using UnityEngine;
 public class Shockwave : MonoBehaviour
 {
     public GameObject shockwavePrefab;
-    [HideInInspector] public GameObject wave;
+    public GameObject wave;
+    public GameObject letterGroup;
     
     public float shockwaveMaxSize;
     public float shockwaveSpeed;
@@ -15,6 +16,8 @@ public class Shockwave : MonoBehaviour
     private Vector3 mousePos;
     public float timerWhenWaveAbsent; //timer used when shockwave is absent
     public float timerWhenWavePresent; //timer when shockwave is present
+
+    public float scaleFactor = 0.9f;
 
     [HideInInspector] public HashSet<GameObject> objectsShockwaveCollidesWith;
 
@@ -40,15 +43,22 @@ public class Shockwave : MonoBehaviour
         }
 
         //On Mouse Click Create New Shockwave
-        if (Input.GetMouseButtonDown(1) && !wave && timerWhenWaveAbsent >= shockwaveCooldown)
+        if (Input.GetMouseButtonDown(1) && !wave.activeSelf && timerWhenWaveAbsent >= shockwaveCooldown)
         {
+
             //Get Mouse Pos
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 10;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos); 
-            //Spawn the Shockwave
-            wave = Instantiate(shockwavePrefab, mousePos, Quaternion.identity,mainCanvas.transform);
 
+            RectTransform rect = mainCanvas.GetComponent<RectTransform>();
+
+            Vector2 newPos;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(rect, mousePos, null, out newPos);
+            newPos = new Vector3(newPos.x + rect.rect.width / 2, newPos.y + rect.rect.height / 2, 0f);
+            newPos /= scaleFactor;
+
+            wave.SetActive(true);
+            wave.transform.position = newPos;
 
             timerWhenWaveAbsent = 0;
         }
@@ -72,7 +82,8 @@ public class Shockwave : MonoBehaviour
             {
                 timerWhenWavePresent = 0;
                 objectsShockwaveCollidesWith.Clear();
-                Destroy(wave);
+                wave.SetActive(false);
+                //Destroy(wave);
             }
         }
     }
