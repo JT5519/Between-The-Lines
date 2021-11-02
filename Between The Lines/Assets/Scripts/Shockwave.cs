@@ -17,12 +17,15 @@ public class Shockwave : MonoBehaviour
     public float timerWhenWavePresent; //timer when shockwave is present
 
     [HideInInspector] public HashSet<GameObject> objectsShockwaveCollidesWith;
-    // Start is called before the first frame update
+
+    private Canvas mainCanvas;
+
     void Start()
     {
         timerWhenWaveAbsent = 0;
         timerWhenWavePresent = 0;
         objectsShockwaveCollidesWith = new HashSet<GameObject>();
+        mainCanvas = GameObject.FindGameObjectWithTag("MainCanvas").GetComponent<Canvas>();
     }
 
     // Update is called once per frame
@@ -44,7 +47,7 @@ public class Shockwave : MonoBehaviour
             mousePos.z = 10;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos); 
             //Spawn the Shockwave
-            wave = Instantiate(shockwavePrefab, mousePos, Quaternion.identity);
+            wave = Instantiate(shockwavePrefab, mousePos, Quaternion.identity,mainCanvas.transform);
 
 
             timerWhenWaveAbsent = 0;
