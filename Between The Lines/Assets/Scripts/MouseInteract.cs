@@ -79,5 +79,10 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void SetLetterInPlace() => letterInPlace = true;
 
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Collided with: " + collision.name);
+    //}
+
 
 }

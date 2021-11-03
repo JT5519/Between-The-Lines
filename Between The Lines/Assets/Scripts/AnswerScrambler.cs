@@ -9,7 +9,7 @@ public class AnswerScrambler : MonoBehaviour
     [SerializeField] float wobbleAmplitude; //Wobble intensity
     MouseInteract[] letterMouseInteract; //Array of text mesh mouse interactions
 
-    Shockwave shockwaveScript;
+    public ShockwaveSpawner shockwaveScript;
     private void Start()
     {
         //Fill the array with text meshes' mouse interactions
@@ -20,7 +20,7 @@ public class AnswerScrambler : MonoBehaviour
             letterMouseInteract[i] = textMesh[i].GetComponent<MouseInteract>();
         }
 
-        shockwaveScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Shockwave>();
+        //shockwaveScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Shockwave>();
     }
     void Update()
     {
