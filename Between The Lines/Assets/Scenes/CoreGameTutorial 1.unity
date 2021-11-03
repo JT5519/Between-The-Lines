@@ -200,90 +200,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &768740976
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 768740979}
-  - component: {fileID: 768740978}
-  - component: {fileID: 768740977}
-  m_Layer: 5
-  m_Name: Text Position
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &768740977
+--- !u!114 &768740977 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6641290746186431600, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+  m_PrefabInstance: {fileID: 6641290745864385025}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768740976}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: It's time for you to take the first quiz of the year, so you must practice
-    to make perfect. The only thing standing in your way is your dyslexia, which
-    prevents you from reading properly. As part of your exercise to accomodate your
-    disability and prepare for the quiz, you must use the floating characters on
-    the page to create as  many words as possible. Form at least three words in a
-    row to pass.
---- !u!222 &768740978
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768740976}
-  m_CullTransparentMesh: 1
---- !u!224 &768740979
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768740976}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2142469308}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.04999, y: 138}
-  m_SizeDelta: {x: 602.9, y: 243}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1510625710 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3719786025986512619, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
@@ -597,7 +524,7 @@ RectTransform:
   m_Children:
   - {fileID: 1738300762}
   m_Father: {fileID: 2142469308}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -730,7 +657,7 @@ RectTransform:
   m_Children:
   - {fileID: 1747124512}
   m_Father: {fileID: 2142469308}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -923,7 +850,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1510625710}
-  - {fileID: 768740979}
   - {fileID: 1842887574}
   - {fileID: 2081478830}
   m_Father: {fileID: 0}
@@ -1128,3 +1054,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
+--- !u!1001 &6641290745864385025
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 656451303270835798, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_Name
+      value: TextPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4309402
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7736534
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553673769964251788, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34ed5c6f9e38db14cab9171a9db5a27d, type: 3}
