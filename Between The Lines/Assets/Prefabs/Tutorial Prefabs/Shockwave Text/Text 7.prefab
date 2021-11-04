@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4065918685194257319
+--- !u!1 &1719540760734271425
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1633813135359912899}
-  - component: {fileID: 4188220141145857368}
-  - component: {fileID: 5744505288586108824}
+  - component: {fileID: 9086640467955353259}
+  - component: {fileID: 3548892451903461895}
+  - component: {fileID: 8838977518705972376}
   m_Layer: 5
-  m_Name: Text 3
+  m_Name: Text 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1633813135359912899
+--- !u!224 &9086640467955353259
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4065918685194257319}
+  m_GameObject: {fileID: 1719540760734271425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -37,21 +37,21 @@ RectTransform:
   m_AnchoredPosition: {x: 2.298, y: 5.7449}
   m_SizeDelta: {x: 602.9, y: 243}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &4188220141145857368
+--- !u!222 &3548892451903461895
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4065918685194257319}
+  m_GameObject: {fileID: 1719540760734271425}
   m_CullTransparentMesh: 1
---- !u!114 &5744505288586108824
+--- !u!114 &8838977518705972376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4065918685194257319}
+  m_GameObject: {fileID: 1719540760734271425}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -78,5 +78,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I'll let you retake it, but I want us to come up\nwith a new study strategy
-    to help \naccomadate the reading difficulties from your dsylexia."
+  m_Text: 'Controls
+
+
+    You have now been given the ability to generate shockwaves
+    on-screen.'
