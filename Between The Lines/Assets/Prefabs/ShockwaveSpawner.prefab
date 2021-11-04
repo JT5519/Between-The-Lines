@@ -45,10 +45,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 5889934072426347833}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 7088b06f1092ebb468370db78f4b182e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shockwavePrefab: {fileID: 0}
+=======
+  m_Script: {fileID: 11500000, guid: d78752899064b2b4cbfffbe7ba263f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shockwavePrefab: {fileID: 2520360023199900110, guid: 5057801ed9d29ff48baa087381777b53, type: 3}
+>>>>>>> minigame_shockwave_click
   shockwaveMaxSize: 100
   shockwaveSpeed: 100
   shockwaveCooldown: 2

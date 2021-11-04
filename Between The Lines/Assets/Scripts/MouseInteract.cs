@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -29,6 +30,8 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         rect = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
+
+
   
     //event handler when item is grabbed by the mouse
     public void OnBeginDrag(PointerEventData eventData)
@@ -75,4 +78,11 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     }
 
     public void SetLetterInPlace() => letterInPlace = true;
+
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Collided with: " + collision.name);
+    //}
+
+
 }
