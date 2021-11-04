@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         timer = GameObject.Find("Timer");
-        answerManager = GameObject.Find("AnswerManager");
+        answerManager = GameObject.Find("OxenAnswerManager");
         time = timer.GetComponent<Timer>().timer;
         goal = 3;
         numOfWords = 0;
