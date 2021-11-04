@@ -11,7 +11,7 @@ public class AnswerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        answerSlots = new char[5];
+        answerSlots = new char[4];
     }
 
     // Update is called once per frame
