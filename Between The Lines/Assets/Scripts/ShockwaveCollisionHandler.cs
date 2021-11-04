@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ShockwaveCollisionHandler : MonoBehaviour
+{
+    HashSet<GameObject> objectsICollideWith;
+    private void Start()
+    {
+        //everytime the shockwave is instantiated, this runs;
+        objectsICollideWith = transform.parent.GetComponent<ShockwaveSpawner>().objectsShockwaveCollidesWith;
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        objectsICollideWith.Add(other.gameObject);
+        Debug.Log("Triggered object: " + other.gameObject.name);
+    }
+}
