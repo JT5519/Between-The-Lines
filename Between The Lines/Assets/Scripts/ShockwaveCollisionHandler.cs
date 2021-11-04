@@ -7,7 +7,7 @@ public class ShockwaveCollisionHandler : MonoBehaviour
     HashSet<GameObject> objectsICollideWith;
     private void Start()
     {
-        //evertime the shockwave is instantiated, this runs;
+        //everytime the shockwave is instantiated, this runs;
         objectsICollideWith = transform.parent.GetComponent<ShockwaveSpawner>().objectsShockwaveCollidesWith;
     }
     private void OnTriggerEnter2D(Collider2D other)
