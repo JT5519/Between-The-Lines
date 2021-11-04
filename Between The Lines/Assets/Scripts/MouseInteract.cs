@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -20,6 +21,8 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private static bool cursorHoldsALetter;
     // private variable for each textmesh to know whether it is the letter held by the cursor
     private bool iAmTheLetterHeldByCursor;
+    // private variable to test 
+    private bool letterInPlace;
 
     private void Start()
     {
@@ -27,6 +30,8 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         rect = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
+
+
   
     //event handler when item is grabbed by the mouse
     public void OnBeginDrag(PointerEventData eventData)
@@ -37,6 +42,7 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             cursorHoldsALetter = true;
             iAmTheLetterHeldByCursor = true;
             canvasGroup.blocksRaycasts = false;
+            letterInPlace = false;
         }
     }
     //event handler when grabbed item is dragged by the mouse
@@ -60,4 +66,23 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             canvasGroup.blocksRaycasts = true;
         }
     }
+
+    public bool GetLetterHeldByCursor()
+    {
+        return iAmTheLetterHeldByCursor;
+    }
+
+    public bool GetLetterInPlace()
+    {
+        return letterInPlace;
+    }
+
+    public void SetLetterInPlace() => letterInPlace = true;
+
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Collided with: " + collision.name);
+    //}
+
+
 }

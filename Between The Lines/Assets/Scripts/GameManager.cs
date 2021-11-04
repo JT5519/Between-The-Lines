@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,13 +11,14 @@ public class GameManager : MonoBehaviour
     private int numOfWords;
     private GameObject answerManager;
     public bool gameOver;
+    [SerializeField] private int nextSceneID;
 
 
     // Start is called before the first frame update
     void Start()
     {
         timer = GameObject.Find("Timer");
-        answerManager = GameObject.Find("AnswerManager");
+        answerManager = GameObject.Find("OxenAnswerManager");
         time = timer.GetComponent<Timer>().timer;
         goal = 3;
         numOfWords = 0;
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Way to Go!" + "\n" + "You got three in a row!");
             gameOver = true;
+            SceneManager.LoadScene(nextSceneID);
         }
     }
 }
