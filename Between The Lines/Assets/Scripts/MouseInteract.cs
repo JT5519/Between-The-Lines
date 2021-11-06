@@ -23,12 +23,15 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private bool iAmTheLetterHeldByCursor;
     // private variable to test 
     private bool letterInPlace;
+    public int answerLinePlacedIn = -1;
+    public AnswerManager AM;
 
     private void Start()
     {
         canvas = transform.parent.parent.GetComponent<Canvas>();
         rect = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+        AM = GameObject.FindGameObjectWithTag("AnswerManager").GetComponent<AnswerManager>();
     }
 
 
@@ -43,6 +46,12 @@ public class MouseInteract : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             iAmTheLetterHeldByCursor = true;
             canvasGroup.blocksRaycasts = false;
             letterInPlace = false;
+            if (answerLinePlacedIn >= 0)
+            {
+                AM.changedSinceCheck = true;
+                AM.answerSlots[answerLinePlacedIn] = '\0';
+            }
+            answerLinePlacedIn = -1;
         }
     }
     //event handler when grabbed item is dragged by the mouse

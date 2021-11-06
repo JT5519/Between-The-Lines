@@ -12,13 +12,14 @@ public class GameManager : MonoBehaviour
     private GameObject answerManager;
     public bool gameOver;
     [SerializeField] private int nextSceneID;
+    [SerializeField] private float timeBetweenScenes;
 
 
     // Start is called before the first frame update
     void Start()
     {
         timer = GameObject.Find("Timer");
-        answerManager = GameObject.Find("OxenAnswerManager");
+        answerManager = GameObject.FindGameObjectWithTag("AnswerManager");
         time = timer.GetComponent<Timer>().timer;
         goal = 3;
         numOfWords = 0;
@@ -49,7 +50,13 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Way to Go!" + "\n" + "You got three in a row!");
             gameOver = true;
-            SceneManager.LoadScene(nextSceneID);
+            StartCoroutine(ChangeScene());
         }
+    }
+
+    IEnumerator ChangeScene()
+    {
+        yield return new WaitForSeconds(timeBetweenScenes);
+        SceneManager.LoadScene(nextSceneID);
     }
 }

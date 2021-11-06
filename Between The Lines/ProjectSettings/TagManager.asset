@@ -9,6 +9,7 @@ TagManager:
   - Answer
   - Shockwave
   - MainCanvas
+  - AnswerManager
   layers:
   - Default
   - TransparentFX
