@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShockwaveSpawner : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class ShockwaveSpawner : MonoBehaviour
 
     private Vector3 mousePos;
     private GameObject wave;
+    [SerializeField]
+    private Image cooldownIndicator;
     //private RectTransform waveTransform;
     public float timerWhenWaveAbsent;
     public float timerWhenWavePresent;
@@ -78,5 +81,8 @@ public class ShockwaveSpawner : MonoBehaviour
                 timerWhenWavePresent = 0;
             }
         }
+
+        // Update the fill amount on the cooldown indicator to show cooldown
+        cooldownIndicator.fillAmount = 1 - (timerWhenWaveAbsent / shockwaveCooldown);
     }
 }
