@@ -78,8 +78,5 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Controls
-
-
-    Click and drag the floating letters with the left mouse
-    button. Move them to the answer line in order to from the answer to the question.'
+  m_Text: "Controls\r\n\r\nClick and drag the floating letters with the left mouse
+    button. Move them to the answer line in order to form the answer to the question.\r"
