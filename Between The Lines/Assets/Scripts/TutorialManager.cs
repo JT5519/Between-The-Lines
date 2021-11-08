@@ -9,6 +9,10 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private Text[] tutorialText;
     [SerializeField] private Text textPlaceHold;
 
+    [SerializeField] private Button previousButton;
+    [SerializeField] private Button nextButton;
+    private Text nextButtonText;
+
     [SerializeField] private int levelToTransition = 1;
 
     private int tutorialIndex = 0;
@@ -16,6 +20,12 @@ public class TutorialManager : MonoBehaviour
     private void Start()
     {
         UpdateText();
+        nextButtonText = nextButton.GetComponentInChildren<Text>();
+    }
+
+    private void Update()
+    {
+        UpdateButtons();   
     }
 
     /// <summary>
@@ -27,6 +37,21 @@ public class TutorialManager : MonoBehaviour
         textPlaceHold.alignment = tutorialText[tutorialIndex].alignment;
         textPlaceHold.color = tutorialText[tutorialIndex].color;
         textPlaceHold.text = tutorialText[tutorialIndex].text;
+    }
+
+    void UpdateButtons()
+    {
+        //Disable previous button on the tutorial's first page
+        if (tutorialIndex <= 0)
+            previousButton.gameObject.SetActive(false);
+        else
+            previousButton.gameObject.SetActive(true);
+
+        //Change the next button text on the last page of the tutorial
+        if (tutorialIndex >= tutorialText.Length - 1)
+            nextButtonText.text = "Play Game";
+        else
+            nextButtonText.text = "Next Page";
     }
 
     /// <summary>
