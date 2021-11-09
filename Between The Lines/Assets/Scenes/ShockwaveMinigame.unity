@@ -978,6 +978,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5272097113453889452, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
   m_PrefabInstance: {fileID: 1639863637}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1656723604 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1837676828288335005, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+  m_PrefabInstance: {fileID: 6187779839319258650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1778232720 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6187779838918466442, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
@@ -1332,6 +1343,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5889934072426347835, guid: 9d7017bdc49cd1648b35b0585e608dca, type: 3}
+      propertyPath: cooldownIndicator
+      value: 
+      objectReference: {fileID: 1656723604}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d7017bdc49cd1648b35b0585e608dca, type: 3}
 --- !u!1001 &6187779839319258650
@@ -1341,6 +1356,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1536247954}
     m_Modifications:
+    - target: {fileID: 1837676828288335005, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c030cbac7c25c7438a7e8b80725e5d6, type: 3}
+    - target: {fileID: 1837676828288335005, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6187779838918466442, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1429,5 +1452,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameBoard
       objectReference: {fileID: 0}
+    - target: {fileID: 9056796074080055099, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c030cbac7c25c7438a7e8b80725e5d6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
