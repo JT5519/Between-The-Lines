@@ -22,7 +22,7 @@ public class ShockwaveSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerWhenWaveAbsent = 0;
+        timerWhenWaveAbsent = shockwaveCooldown+1;
         timerWhenWavePresent = 0;
         objectsShockwaveCollidesWith = new HashSet<GameObject>();
     }
