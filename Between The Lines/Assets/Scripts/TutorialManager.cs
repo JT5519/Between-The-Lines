@@ -13,6 +13,11 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private Button nextButton;
     private Text nextButtonText;
 
+    [SerializeField] private GameObject backgroundPanel;
+    private Image backgroundImage;
+    [SerializeField] private Sprite blankBoardSprite;
+    private Sprite originalSprite;
+
     [SerializeField] private int levelToTransition = 1;
 
     private int tutorialIndex = 0;
@@ -21,11 +26,20 @@ public class TutorialManager : MonoBehaviour
     {
         UpdateText();
         nextButtonText = nextButton.GetComponentInChildren<Text>();
+        backgroundImage = backgroundPanel.GetComponent<Image>();
+
+        originalSprite = backgroundImage.sprite;
     }
 
     private void Update()
     {
-        UpdateButtons();   
+        UpdateButtons();
+
+        //Change background past the title page
+        if (tutorialIndex > 0)
+            backgroundImage.sprite = blankBoardSprite;
+        else
+            backgroundImage.sprite = originalSprite;
     }
 
     /// <summary>

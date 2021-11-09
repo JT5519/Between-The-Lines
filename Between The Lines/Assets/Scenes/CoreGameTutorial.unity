@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &144556961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3719786025986512616, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
+  m_PrefabInstance: {fileID: 3719786027161290565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &549720217 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
@@ -995,6 +1000,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2081478831}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
+      propertyPath: backgroundPanel
+      value: 
+      objectReference: {fileID: 144556961}
+    - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
+      propertyPath: blankBoardSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d0b264043150d445ae547eef686e08b, type: 3}
+    - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: levelToTransition
       value: 1
       objectReference: {fileID: 0}
@@ -1085,7 +1098,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3719786025986512619, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 48.2571
+      value: 16.51219
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719786025986512619, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719786025986512619, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719786025986512619, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3719786025986512619, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1121,7 +1146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3719786025986512619, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5.7449036
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3719786025986512619, guid: 34d4592ea44a1d441a8fd2c77ecde8ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
