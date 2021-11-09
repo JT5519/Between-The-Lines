@@ -967,6 +967,10 @@ PrefabInstance:
       propertyPath: shockwaveScript
       value: 
       objectReference: {fileID: 1470235851}
+    - target: {fileID: 5272097113453889453, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
+      propertyPath: wobbleAmplitude
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5272097113453889455, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
       propertyPath: m_Name
       value: Core Game Letter Group
