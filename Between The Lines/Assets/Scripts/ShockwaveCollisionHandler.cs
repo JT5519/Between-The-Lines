@@ -13,6 +13,6 @@ public class ShockwaveCollisionHandler : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         objectsICollideWith.Add(other.gameObject);
-        Debug.Log("Triggered object: " + other.gameObject.name);
+        //Debug.Log("Triggered object: " + other.gameObject.name);
     }
 }

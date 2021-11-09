@@ -55,7 +55,7 @@ public class AnswerManager : MonoBehaviour
         {
             beenSolved = true;
             correctFeedback.SetActive(true);
-            Debug.Log("Solved!");
+            //Debug.Log("Solved!");
         }
     }
 

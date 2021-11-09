@@ -41,14 +41,14 @@ public class GameManager : MonoBehaviour
         if(time == 0 && numOfWords != goal)
         {
             int wordsLeft = goal - numOfWords;
-            Debug.Log("Sorry, You Failed..." + "\n" + "You had " + wordsLeft + " words to go.");
+            //Debug.Log("Sorry, You Failed..." + "\n" + "You had " + wordsLeft + " words to go.");
             gameOver = true;
         }
 
         //Checks if the player has reached the goal -- getting three words on the page
         if(numOfWords == goal)
         {
-            Debug.Log("Way to Go!" + "\n" + "You got three in a row!");
+            //Debug.Log("Way to Go!" + "\n" + "You got three in a row!");
             gameOver = true;
             StartCoroutine(ChangeScene());
         }
