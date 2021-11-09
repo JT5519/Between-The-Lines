@@ -1080,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.size
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[0]
@@ -1113,9 +1113,17 @@ PrefabInstance:
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[7]
       value: 
-      objectReference: {fileID: 8838977518705972376, guid: d2171c2568167484e8d3d9a0d97a3eba, type: 3}
+      objectReference: {fileID: 8838977518705972376, guid: d7084cb1626c94146b5541a521c96536, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[8]
+      value: 
+      objectReference: {fileID: 8838977518705972376, guid: dd1e341bfb39f444a84506cc277227c5, type: 3}
+    - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
+      propertyPath: tutorialText.Array.data[9]
+      value: 
+      objectReference: {fileID: 8838977518705972376, guid: d2171c2568167484e8d3d9a0d97a3eba, type: 3}
+    - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
+      propertyPath: tutorialText.Array.data[10]
       value: 
       objectReference: {fileID: 8838977518705972376, guid: 3b4f28f9ff7f8014d9ef61fe6baa6242, type: 3}
     - target: {fileID: 2995841027095299343, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}

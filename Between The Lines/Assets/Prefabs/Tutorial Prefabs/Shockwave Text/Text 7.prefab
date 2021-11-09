@@ -78,8 +78,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Controls
-
-
-    You have now been given the ability to generate shockwaves
-    on-screen.'
+  m_Text: Does that sound alright to you?
