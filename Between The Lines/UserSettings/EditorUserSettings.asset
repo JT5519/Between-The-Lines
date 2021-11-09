@@ -6,6 +6,7 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
+<<<<<<< HEAD
       value: 22424703114646680e0b0227036c6c111b07142f1f2b233e28694c7df7ee3d2cfb
       flags: 0
     RecentlyUsedScenePath-1:
@@ -19,12 +20,31 @@ EditorUserSettings:
       flags: 0
     RecentlyUsedScenePath-4:
       value: 22424703114646680e0b0227036c7c1f0412580725262f372c24187df7ee3d2cfb
+=======
+      value: 224247031146466f0816180f15305750260517650930273d3d251820a2a6741dfaf324e8f4750c3f3c0cea2f4b6c527fbf4a2805ff060b1f1800fa4e27fa020714dd58e40edc0d15c90c08cbde53c4eddcc2cd
       flags: 0
-    RecentlyUsedScenePath-5:
+    RecentlyUsedScenePath-1:
+      value: 22424703114646680e0b0227036c6c111b07142f1f2b233e28694c7df7ee3d2cfb
+      flags: 0
+    RecentlyUsedScenePath-2:
+      value: 22424703114646680e0b0227036c7a0806120a23212d28242c255326ece92021
+      flags: 0
+    RecentlyUsedScenePath-3:
       value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
       flags: 0
+    RecentlyUsedScenePath-4:
+      value: 22424703114646680e0b0227036c7c1f04123f2b212d122539260f3ae3ec7469acf238e0f323
+>>>>>>> FB_Shockwave_Cooldown
+      flags: 0
+    RecentlyUsedScenePath-5:
+      value: 22424703114646680e0b0227036c7219181e1f2b212d1538222a1624e3f63176f7e93ffdfe
+      flags: 0
     RecentlyUsedScenePath-6:
+<<<<<<< HEAD
       value: 22424703114646680e0b0227036c6c181914133d2d3e2304383d1221ebe13876f7e93ffdfe
+=======
+      value: 22424703114646680e0b0227036c7c1f0412580725262f372c24187df7ee3d2cfb
+>>>>>>> FB_Shockwave_Cooldown
       flags: 0
     RecentlyUsedScenePath-7:
       value: 22424703114646680e0b0227036c7c1f04123f2b212d122539260f3ae3ec7a2decee22f0
