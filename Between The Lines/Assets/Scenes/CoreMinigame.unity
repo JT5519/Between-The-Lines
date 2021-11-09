@@ -474,6 +474,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5889934072426347835, guid: 9d7017bdc49cd1648b35b0585e608dca, type: 3}
+      propertyPath: cooldownIndicator
+      value: 
+      objectReference: {fileID: 1091857073}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d7017bdc49cd1648b35b0585e608dca, type: 3}
 --- !u!114 &794726056 stripped
@@ -497,6 +501,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7680671316439892917, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
   m_PrefabInstance: {fileID: 1180599134}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1091857073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9056796074080055099, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+  m_PrefabInstance: {fileID: 6187779839319258650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1180599134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1233,6 +1248,10 @@ PrefabInstance:
       propertyPath: shockwaveScript
       value: 
       objectReference: {fileID: 794726056}
+    - target: {fileID: 5272097113453889453, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
+      propertyPath: wobbleAmplitude
+      value: 0.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5272097113453889455, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
       propertyPath: m_Name
       value: Core Game Letter Group
