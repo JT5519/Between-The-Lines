@@ -12,31 +12,49 @@ public class QuestionScrambler : MonoBehaviour
     [SerializeField] float scramblePeriod; //periodicity of each word being scrambled
     [SerializeField] float scrambleOffset; //relative offset of scrambling between consecutive words
     float timer; //timer to measure time in current period
-    bool[] isScrambled; //array that maintains if each word has been scrambled in the current period or not
-    // Update is called once per frame
+
+    
+    private List<string> words; //list to hold words list of the question
+    private string[] initialQuestionWords; //saves the initial questions words
+    bool[] isScrambled; //array to hold scrambled status of each word (assumed that number of words in question remains constant)
+
+    public GameObject[] wordColliders; //array holding collider objects for each question word
+    public ShockwaveSpawner shockwaveScript;
     private void Start()
     {
         timer = 0;
+        //initialising word list
+        words = new List<string>(Regex.Split(textComponent.text, @"[\s?]"));
+        words.RemoveAll(word => word.Length == 0);
+        //initialising and populating initialQuestionWords
+        initialQuestionWords = new string[words.Count];
+        for (int i = 0; i < initialQuestionWords.Length; i++)
+            initialQuestionWords[i] = words[i];
+        //intializing and populating isScrambled array
+        isScrambled = new bool[words.Count];
+        for (int i = 0; i < isScrambled.Length; i++)
+            isScrambled[i] = false;
     }
 
     void Update()
     {
         //timer update
-        TimerController();
+        timer += Time.deltaTime;
         //check for period reset 
         ResetTimerAndScrambler();
         //list containing words in the question
-        List<string> words = new List<string>(Regex.Split(textComponent.text, @"[\s?]"));
+        words = new List<string>(Regex.Split(textComponent.text, @"[\s?]"));
         words.RemoveAll(word => word.Length == 0);
-        //initialize isScrambled array if not done
-        if (isScrambled == null)
-        {
-            populateIsScrambledArrayAsFalse(words.Count);
-        }
         //loop to iterate through the list
         foreach (int index in Enumerable.Range(0, words.Count))
         {
             //for each word, scramble it if not scrambled yet, based on its relative offset and scramble period
+            if(inWavePath(index))
+            {
+                words[index] = initialQuestionWords[index];
+                textComponent.text = string.Join(" ", words) + "?";
+                continue;
+            }
             if (timer > (scrambleOffset * index)%scramblePeriod && !isScrambled[index])
             {
                 //replace original word with scrambled word
@@ -49,35 +67,14 @@ public class QuestionScrambler : MonoBehaviour
         }
     }
     //update timer function
-    void TimerController()
-    {
-        timer += Time.deltaTime;
-    }
     //reset timer and isScrambled array when period ends
     void ResetTimerAndScrambler()
     {
         if (timer > scramblePeriod)
         {
             timer = 0;
-            if (isScrambled != null)
-            {
-                populateIsScrambledArrayAsFalse();
-            }
-        }
-    }
-    //populate / re-populate the isScrambled array 
-    void populateIsScrambledArrayAsFalse(int size=-1)
-    {
-        //if size is not passed as parameter, it means array is only being reset
-        if(size!=-1)
-        {
-            //if size is passed as parameter, a new array must be created
-            isScrambled = new bool[size];
-        }
-        //populate array
-        for(int i = 0;i<isScrambled.Length;i++)
-        {
-            isScrambled[i] = false;
+            for (int i = 0; i < isScrambled.Length; i++)
+                isScrambled[i] = false;
         }
     }
     //scrambling a word
@@ -89,5 +86,11 @@ public class QuestionScrambler : MonoBehaviour
         word[index+1] = temp;
         return word.ToString();
     }
-    
+    bool inWavePath(int wordIndex)
+    {
+        if (shockwaveScript.objectsShockwaveCollidesWith.Contains(wordColliders[wordIndex]))
+            return true;
+        return false;
+    }
+
 }

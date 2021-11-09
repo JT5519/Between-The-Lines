@@ -15,12 +15,13 @@ public class AnswerLine : MonoBehaviour, IDropHandler
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition =
                 GetComponent<RectTransform>().anchoredPosition;
 
-            //SEts a trigger to prevent wobble
+            //Sets a trigger to prevent wobble
             eventData.pointerDrag.GetComponent<MouseInteract>().SetLetterInPlace();
 
             char[] answerSlots = GetComponentInParent<AnswerManager>().answerSlots;
 
             answerSlots[lineIndex] = char.Parse(eventData.pointerDrag.GetComponent<TextMeshProUGUI>().text.ToLower());
+            eventData.pointerDrag.GetComponent<MouseInteract>().answerLinePlacedIn = lineIndex;
         }
     }
 }
