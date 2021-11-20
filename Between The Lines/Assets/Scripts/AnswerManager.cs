@@ -12,6 +12,9 @@ public class AnswerManager : MonoBehaviour
     [SerializeField] private float timeForFeedback = 3;
     public bool changedSinceCheck;
 
+    Coroutine routineController; //to force stop the incorrect coroutine , if required
+    public AnswerLine[] answerLines; //answerline scripts of answer managers children
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,7 @@ public class AnswerManager : MonoBehaviour
         correctFeedback.SetActive(false);
         incorrectFeedback.SetActive(false);
         changedSinceCheck = true;
+        routineController = null;
     }
 
     // Update is called once per frame
@@ -46,7 +50,7 @@ public class AnswerManager : MonoBehaviour
 
         if (!empty && !solved && changedSinceCheck)
         {
-            StartCoroutine(WrongAnswer());
+            routineController = StartCoroutine(WrongAnswer());
             changedSinceCheck = false;
         }
 
@@ -54,6 +58,13 @@ public class AnswerManager : MonoBehaviour
         if (solved && !beenSolved)
         {
             beenSolved = true;
+            if (incorrectFeedback.activeSelf)
+            {
+                incorrectFeedback.SetActive(false);
+                if (routineController != null)
+                    StopCoroutine(routineController);
+
+            }
             correctFeedback.SetActive(true);
             Debug.Log("Solved!");
         }
@@ -64,5 +75,6 @@ public class AnswerManager : MonoBehaviour
         incorrectFeedback.SetActive(true);
         yield return new WaitForSeconds(timeForFeedback);
         incorrectFeedback.SetActive(false);
+        routineController = null;
     }
 }

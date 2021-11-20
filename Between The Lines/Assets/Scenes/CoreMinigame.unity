@@ -851,8 +851,8 @@ Canvas:
   m_GameObject: {fileID: 1536247950}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 519420031}
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -1245,13 +1245,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5272097113453889453, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1536247953}
+    - target: {fileID: 5272097113453889453, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
       propertyPath: shockwaveScript
       value: 
       objectReference: {fileID: 794726056}
-    - target: {fileID: 5272097113453889453, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
-      propertyPath: wobbleAmplitude
-      value: 0.07
-      objectReference: {fileID: 0}
     - target: {fileID: 5272097113453889455, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
       propertyPath: m_Name
       value: Core Game Letter Group
@@ -1265,10 +1265,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1536247954}
     m_Modifications:
-    - target: {fileID: 2965873017272372280, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6187779838918466442, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

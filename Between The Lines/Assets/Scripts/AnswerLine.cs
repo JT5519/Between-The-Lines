@@ -7,10 +7,10 @@ using TMPro;
 public class AnswerLine : MonoBehaviour, IDropHandler
 {
     public int lineIndex;
-
+    private bool lineFilled = false;
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag != null)
+        if (eventData.pointerDrag != null && !lineFilled)
         {
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition =
                 GetComponent<RectTransform>().anchoredPosition;
@@ -22,6 +22,14 @@ public class AnswerLine : MonoBehaviour, IDropHandler
 
             answerSlots[lineIndex] = char.Parse(eventData.pointerDrag.GetComponent<TextMeshProUGUI>().text.ToLower());
             eventData.pointerDrag.GetComponent<MouseInteract>().answerLinePlacedIn = lineIndex;
+            //line has a letter occupying it
+            lineFilled = true;
         }
     }
+    public bool GetLineFilled()
+    {
+        return lineFilled;
+    }
+
+    public void SetLineFilled() => lineFilled = false;
 }
