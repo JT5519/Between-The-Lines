@@ -1344,6 +1344,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5889934072426347835, guid: 9d7017bdc49cd1648b35b0585e608dca, type: 3}
+      propertyPath: shockwaveSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5889934072426347835, guid: 9d7017bdc49cd1648b35b0585e608dca, type: 3}
       propertyPath: cooldownIndicator
       value: 
       objectReference: {fileID: 1656723604}
@@ -1356,6 +1360,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1536247954}
     m_Modifications:
+    - target: {fileID: 992798405169300433, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+      propertyPath: m_EffectColor.a
+      value: 0.6313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 992798405169300433, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+      propertyPath: m_EffectColor.b
+      value: 0.41176474
+      objectReference: {fileID: 0}
+    - target: {fileID: 992798405169300433, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+      propertyPath: m_EffectColor.g
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 992798405169300433, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+      propertyPath: m_EffectColor.r
+      value: 0.59607846
+      objectReference: {fileID: 0}
     - target: {fileID: 1837676828288335005, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1363,6 +1383,10 @@ PrefabInstance:
     - target: {fileID: 1837676828288335005, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
       propertyPath: m_FillAmount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965873017272372280, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
+      propertyPath: m_Name
+      value: Shockwave_Cooldown_Indicator
       objectReference: {fileID: 0}
     - target: {fileID: 6187779838918466442, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
       propertyPath: m_Pivot.x

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shockwave_Mat
+  m_Shader: {fileID: -6465566751694194690, guid: a596ab062d6e6684399d6e10b01fb153, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_e475db04888d4363b083906f03f2dfac:
+        m_Texture: {fileID: 2800000, guid: 7f04d223f2252a3439f4ac4fc1609a75, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 0529b0f3cb1be6c478a19fefa5aec9a2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_08615d63513644039e642aeab5bfeebe: 2.25
+    - Vector1_b305bd7dc74d40ee9ee5f064d4ee31fe: 3
+    - Vector1_d4369abd9bbb4774b0401c9ffe9dab75: 0.61
+    - _Magnification: -0.1
+    - _Size: 0.116
+    m_Colors:
+    - Vector2_77236afe2b7845c9a08e9db4d326eaf2: {r: 0, g: 0, b: 0, a: 0}
+    - _FocalPoint: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _Speed: {r: 1, g: 1, b: 0, a: 0}
+    - _TextureScale: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
