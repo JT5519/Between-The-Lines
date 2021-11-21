@@ -8,7 +8,7 @@ using TMPro;
 
 public class QuestionScrambler : MonoBehaviour
 {
-    [SerializeField] TMP_Text textComponent;
+    public TMP_Text textComponent;
     [SerializeField] float scramblePeriod; //periodicity of each word being scrambled
     [SerializeField] float scrambleOffset; //relative offset of scrambling between consecutive words
     float timer; //timer to measure time in current period
@@ -63,6 +63,7 @@ public class QuestionScrambler : MonoBehaviour
                 textComponent.text = string.Join(" ", words) + "?";
                 //record that word has been scrambled for current period
                 isScrambled[index] = true;
+
             }
         }
     }
@@ -77,6 +78,22 @@ public class QuestionScrambler : MonoBehaviour
                 isScrambled[i] = false;
         }
     }
+
+    public void ResetQuestion()
+    {
+        timer = 0;
+        words = new List<string>(Regex.Split(textComponent.text, @"[\s?]"));
+        words.RemoveAll(word => word.Length == 0);
+        //initialising and populating initialQuestionWords
+        initialQuestionWords = new string[words.Count];
+        for (int i = 0; i < initialQuestionWords.Length; i++)
+            initialQuestionWords[i] = words[i];
+        //intializing and populating isScrambled array
+        isScrambled = new bool[words.Count];
+        for (int i = 0; i < isScrambled.Length; i++)
+            isScrambled[i] = false;
+    }
+
     //scrambling a word
     string WordScramble(StringBuilder word)
     {
