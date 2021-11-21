@@ -1085,47 +1085,47 @@ PrefabInstance:
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[0]
       value: 
-      objectReference: {fileID: 5498302113566999583, guid: 26c0d3a6595c67e43b309b9334fdd532, type: 3}
+      objectReference: {fileID: 3763795612538980460, guid: 26c0d3a6595c67e43b309b9334fdd532, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[1]
       value: 
-      objectReference: {fileID: 2960327035148470945, guid: 34a66cc298538604792b8d55088035a0, type: 3}
+      objectReference: {fileID: 5837015270784947594, guid: 34a66cc298538604792b8d55088035a0, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[2]
       value: 
-      objectReference: {fileID: 5970866203155664750, guid: 089580ef86744004e82d1fafd8c5713b, type: 3}
+      objectReference: {fileID: 5970866203155664748, guid: 089580ef86744004e82d1fafd8c5713b, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[3]
       value: 
-      objectReference: {fileID: 7875742628595607019, guid: 7e2f30b6af8cb3f4ca6f904521728d3a, type: 3}
+      objectReference: {fileID: 2832541188000370226, guid: 7e2f30b6af8cb3f4ca6f904521728d3a, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[4]
       value: 
-      objectReference: {fileID: 3307738108784691201, guid: 6cbd92bac0a26a74688fee1d398710b6, type: 3}
+      objectReference: {fileID: 1319410191939029839, guid: 6cbd92bac0a26a74688fee1d398710b6, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[5]
       value: 
-      objectReference: {fileID: 4833555220945880292, guid: c364ca4c07215ed44aae5d4613f59262, type: 3}
+      objectReference: {fileID: 7887325384448220775, guid: c364ca4c07215ed44aae5d4613f59262, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[6]
       value: 
-      objectReference: {fileID: 8838977518705972376, guid: ee1db41205d6bbd4b8c3edcbe43837d7, type: 3}
+      objectReference: {fileID: 1719540760734271425, guid: ee1db41205d6bbd4b8c3edcbe43837d7, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[7]
       value: 
-      objectReference: {fileID: 8838977518705972376, guid: d7084cb1626c94146b5541a521c96536, type: 3}
+      objectReference: {fileID: 1719540760734271425, guid: d7084cb1626c94146b5541a521c96536, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[8]
       value: 
-      objectReference: {fileID: 8838977518705972376, guid: dd1e341bfb39f444a84506cc277227c5, type: 3}
+      objectReference: {fileID: 1719540760734271425, guid: dd1e341bfb39f444a84506cc277227c5, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[9]
       value: 
-      objectReference: {fileID: 8838977518705972376, guid: d2171c2568167484e8d3d9a0d97a3eba, type: 3}
+      objectReference: {fileID: 1719540760734271425, guid: d2171c2568167484e8d3d9a0d97a3eba, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[10]
       value: 
-      objectReference: {fileID: 8838977518705972376, guid: 3b4f28f9ff7f8014d9ef61fe6baa6242, type: 3}
+      objectReference: {fileID: 1719540760734271425, guid: 3b4f28f9ff7f8014d9ef61fe6baa6242, type: 3}
     - target: {fileID: 2995841027095299343, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: m_Name
       value: Tutorial Manager

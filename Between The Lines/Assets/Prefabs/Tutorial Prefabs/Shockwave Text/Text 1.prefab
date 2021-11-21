@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2859862267516009927}
   - component: {fileID: 6449103011035498789}
   - component: {fileID: 2960327035148470945}
+  - component: {fileID: 4688748485955459805}
   m_Layer: 5
   m_Name: Text 1
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Have you heard of multisensory integration?
+--- !u!114 &4688748485955459805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837015270784947594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d565d766f9593940b163142becf06e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerButtonText: No.

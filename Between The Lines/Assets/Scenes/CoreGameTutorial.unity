@@ -988,6 +988,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: nextButton
       value: 
       objectReference: {fileID: 1842887575}
@@ -1018,35 +1022,35 @@ PrefabInstance:
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[0]
       value: 
-      objectReference: {fileID: 4744613798372922446, guid: 599b91274fb9ca64eba65062f46404be, type: 3}
+      objectReference: {fileID: 6161360225662654204, guid: 599b91274fb9ca64eba65062f46404be, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[1]
       value: 
-      objectReference: {fileID: 7842233985831411213, guid: 2be5fbe32380d4a44baa08bb6e1f1afd, type: 3}
+      objectReference: {fileID: 6747365699183163222, guid: 2be5fbe32380d4a44baa08bb6e1f1afd, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[2]
       value: 
-      objectReference: {fileID: 4890481978873936003, guid: c71e20a6b6ed6954082d636eab1a527d, type: 3}
+      objectReference: {fileID: 8913208583244076849, guid: c71e20a6b6ed6954082d636eab1a527d, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[3]
       value: 
-      objectReference: {fileID: 5744505288586108824, guid: 30b25fc8415602743bd12358467cf4b9, type: 3}
+      objectReference: {fileID: 4065918685194257319, guid: 30b25fc8415602743bd12358467cf4b9, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[4]
       value: 
-      objectReference: {fileID: 6736890547222482635, guid: 2069ab866f1dd8f4d9ea7ef9f019c073, type: 3}
+      objectReference: {fileID: 3959907088949736404, guid: 2069ab866f1dd8f4d9ea7ef9f019c073, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[5]
       value: 
-      objectReference: {fileID: 2056408365642376955, guid: a235822019efbd54ea1227245007d82c, type: 3}
+      objectReference: {fileID: 6274124444921000258, guid: a235822019efbd54ea1227245007d82c, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[6]
       value: 
-      objectReference: {fileID: 2060819227915064310, guid: 6240a1204a3ec71469444d7e34cdb6ee, type: 3}
+      objectReference: {fileID: 7149807199211000817, guid: 6240a1204a3ec71469444d7e34cdb6ee, type: 3}
     - target: {fileID: 2995841027095299342, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: tutorialText.Array.data[7]
       value: 
-      objectReference: {fileID: 2060819227915064310, guid: ced718762697eb7459888f3a12fbc170, type: 3}
+      objectReference: {fileID: 7149807199211000817, guid: ced718762697eb7459888f3a12fbc170, type: 3}
     - target: {fileID: 2995841027095299343, guid: 65ee21d78d2ac3840ac57465ebeb3a44, type: 3}
       propertyPath: m_Name
       value: Tutorial Manager

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9086640467955353259}
   - component: {fileID: 3548892451903461895}
   - component: {fileID: 8838977518705972376}
+  - component: {fileID: 5213482726294726371}
   m_Layer: 5
   m_Name: Text 7
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Does that sound alright to you?
+--- !u!114 &5213482726294726371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719540760734271425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d565d766f9593940b163142becf06e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerButtonText: Ya.
