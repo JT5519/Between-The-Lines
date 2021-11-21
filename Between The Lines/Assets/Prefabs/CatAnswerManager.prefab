@@ -342,7 +342,7 @@ MonoBehaviour:
   incorrectFeedback: {fileID: 0}
   timeForFeedback: 3
   changedSinceCheck: 0
-  round1: 0
+  round1: 1
   GM: {fileID: 0}
 --- !u!1 &1921778013300845658
 GameObject:
