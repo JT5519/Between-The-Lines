@@ -94,6 +94,14 @@ public class AnswerManager : MonoBehaviour
             answerSlots = new char[answers2.Length];
             correctAnswer = answers2;
             QM.textComponent = question2;
+            foreach (GameObject c in question1Colliders)
+            {
+                c.SetActive(false);
+            }
+            foreach (GameObject c in question2Colliders)
+            {
+                c.SetActive(true);
+            }
             QM.wordColliders = question2Colliders;
             letterGroup1.SetActive(false);
             letterGroup2.SetActive(true);
@@ -105,6 +113,14 @@ public class AnswerManager : MonoBehaviour
             answerSlots = new char[answers3.Length];
             correctAnswer = answers3;
             QM.textComponent = question3;
+            foreach (GameObject c in question2Colliders)
+            {
+                c.SetActive(false);
+            }
+            foreach (GameObject c in question3Colliders)
+            {
+                c.SetActive(true);
+            }
             QM.wordColliders = question3Colliders;
             letterGroup2.SetActive(false);
             letterGroup3.SetActive(true);

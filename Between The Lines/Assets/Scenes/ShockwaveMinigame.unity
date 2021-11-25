@@ -516,6 +516,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1302695497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 573289978, guid: e56c83ed456014d459345938556e5b53, type: 3}
+  m_PrefabInstance: {fileID: 1257238339803956571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1302695499
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302695497}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: abce622354eefba479e8bd589b01ccc9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1335143736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5329911941923921090, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
@@ -1237,6 +1338,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 217.5
       objectReference: {fileID: 0}
+    - target: {fileID: 286898936561601041, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407126163112414145, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 575598158155489492, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1244,6 +1353,14 @@ PrefabInstance:
     - target: {fileID: 1099090950521513021, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
       propertyPath: m_text
       value: What is three multiplied by four?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125380201300050240, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207744632397467665, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1797345522368030364, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
       propertyPath: m_text
@@ -1341,17 +1458,41 @@ PrefabInstance:
       propertyPath: m_text
       value: What is the plural of city?
       objectReference: {fileID: 0}
+    - target: {fileID: 3355669261961252916, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337232075417302527, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997708731933649457, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329911941923921090, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5932915498265062823, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6744577902412569498, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095300567521031416, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670468810227868401, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7902128763306266273, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8934134659572519684, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
       propertyPath: m_IsActive
