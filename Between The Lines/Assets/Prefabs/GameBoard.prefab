@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 05811d4355549584b8c81732c1818d5c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c030cbac7c25c7438a7e8b80725e5d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 6187779838918466443}
   m_Layer: 5
   m_Name: GameBoard
-  m_TagString: Untagged
+  m_TagString: GameBoard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 05811d4355549584b8c81732c1818d5c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c030cbac7c25c7438a7e8b80725e5d6, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

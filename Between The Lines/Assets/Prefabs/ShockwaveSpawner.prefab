@@ -53,5 +53,6 @@ MonoBehaviour:
   shockwaveSpeed: 100
   shockwaveCooldown: 2
   shockwaveHangTime: 2
+  cooldownIndicator: {fileID: 0}
   timerWhenWaveAbsent: 0
   timerWhenWavePresent: 0

@@ -1245,10 +1245,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5272097113453889453, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 1536247953}
-    - target: {fileID: 5272097113453889453, guid: f6e5557c270326a48a3df35eede816c4, type: 3}
       propertyPath: shockwaveScript
       value: 
       objectReference: {fileID: 794726056}

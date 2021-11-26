@@ -11,23 +11,20 @@ public class AnswerScrambler : MonoBehaviour
 
     public ShockwaveSpawner shockwaveScript;
 
-    private Vector2 screenBounds;
-    private float objectWidth;
-    private float objectHeight;
-
+    private Rect screenBounds; //current screen size rectangle
+    private Vector2[] initialAnchoredPositions; //initial letter positions 
     private void Start()
     {
-        //Fill the array with text meshes' mouse interactions
-        letterMouseInteract = new MouseInteract[textMesh.Length];
-
+        letterMouseInteract = new MouseInteract[textMesh.Length]; 
+        initialAnchoredPositions = new Vector2[textMesh.Length];
+        //Filling up both arrays with initial values
         for(int i = 0; i < textMesh.Length; i++)
         {
             letterMouseInteract[i] = textMesh[i].GetComponent<MouseInteract>();
+            initialAnchoredPositions[i] = textMesh[i].rectTransform.anchoredPosition;
         }
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        //objectWidth = transform.GetComponent<SpriteRenderer>().bounds.extents.x; //extents = size of width / 2
-        //objectHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y; //extents = size of height / 2
-        //shockwaveScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Shockwave>();
+        //current screen size
+        screenBounds = new Rect(0, 0, Screen.width, Screen.height);
     }
     void Update()
     {
@@ -36,12 +33,11 @@ public class AnswerScrambler : MonoBehaviour
         {
             if(!letterMouseInteract[i].GetLetterHeldByCursor() && !letterMouseInteract[i].GetLetterInPlace() && !inWavePath(textMesh[i]))
             {
+                //if letter goes out of the screen, reset it back to its initial position
+                if (!screenBounds.Contains(textMesh[i].transform.position))
+                    textMesh[i].rectTransform.anchoredPosition = initialAnchoredPositions[i];
                 Vector2 offset = Wobble(Time.time + i);
                 textMesh[i].rectTransform.anchoredPosition += offset;
-                //Vector2 currPos = textMesh[i].transform.position;
-                //currPos.x = Mathf.Clamp(currPos.x, screenBounds.x, screenBounds.x*-1);
-                //currPos.y = Mathf.Clamp(currPos.y, screenBounds.y, screenBounds.y*-1);
-                //textMesh[i].transform.position = currPos;
             }
            
         }

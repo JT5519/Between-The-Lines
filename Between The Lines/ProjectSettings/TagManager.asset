@@ -10,6 +10,7 @@ TagManager:
   - Shockwave
   - MainCanvas
   - AnswerManager
+  - GameBoard
   layers:
   - Default
   - TransparentFX

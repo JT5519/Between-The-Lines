@@ -1356,14 +1356,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1536247954}
     m_Modifications:
-    - target: {fileID: 1837676828288335005, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5c030cbac7c25c7438a7e8b80725e5d6, type: 3}
-    - target: {fileID: 1837676828288335005, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
-      propertyPath: m_FillAmount
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6187779838918466442, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1452,9 +1444,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameBoard
       objectReference: {fileID: 0}
-    - target: {fileID: 9056796074080055099, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5c030cbac7c25c7438a7e8b80725e5d6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64899d6a5bc1e514abce06df7d507fe0, type: 3}
