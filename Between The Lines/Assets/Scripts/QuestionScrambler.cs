@@ -80,6 +80,9 @@ public class QuestionScrambler : MonoBehaviour
     //scrambling a word
     string WordScramble(StringBuilder word)
     {
+        //handling single length words 
+        if (word.Length <= 1)
+            return word.ToString();
         int index = (Random.Range(0, word.Length-1));
         char temp = word[index];
         word[index] = word[index+1];
