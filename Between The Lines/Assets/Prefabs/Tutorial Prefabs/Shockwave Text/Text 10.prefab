@@ -81,6 +81,6 @@ MonoBehaviour:
   m_Text: 'Controls
 
 
-    To generate shockwaves, right-click the mouse on any position
-    on the screen. The resulting shockwave will freeze any and all letters in the
-    affected area, giving you time to read and grab the letters.'
+    To focus, right-click the mouse on any position on the
+    screen. The resulting effect will freeze any and all letters in the affected
+    area, giving you time to read and grab the letters.'
