@@ -1222,12 +1222,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestionManager
       objectReference: {fileID: 0}
+    - target: {fileID: 702991181731534608, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 702991181731534608, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b2af251fb4ad7541a510208b5663604, type: 2}
+    - target: {fileID: 702991181731534608, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 702991181731534608, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6618954060496181998, guid: 4b2af251fb4ad7541a510208b5663604, type: 2}
+    - target: {fileID: 2762631307139018479, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b2af251fb4ad7541a510208b5663604, type: 2}
+    - target: {fileID: 2762631307139018479, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2960580108360327177, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
       propertyPath: shockwaveScript
       value: 
       objectReference: {fileID: 794726056}
     - target: {fileID: 2960580108865229618, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3595952601703132238, guid: 42c32cbe32d9313458afd88211f5a06c, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1309,11 +1337,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1062406415403527731, guid: 0e1846986d5df6d4dac1203e3a521d48, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 204
+      value: 207.1
       objectReference: {fileID: 0}
     - target: {fileID: 1062406415403527731, guid: 0e1846986d5df6d4dac1203e3a521d48, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 107
+      value: 123.4
       objectReference: {fileID: 0}
     - target: {fileID: 1062406415403527731, guid: 0e1846986d5df6d4dac1203e3a521d48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
