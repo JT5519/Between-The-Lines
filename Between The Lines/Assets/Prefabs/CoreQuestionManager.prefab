@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2960580107871881938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 757934811, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: textComponent
+      value: 
+      objectReference: {fileID: 702991181731534608}
+    - target: {fileID: 757934811, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: shockwaveScript
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 757934811, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: wordColliders.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 757934811, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: wordColliders.Array.data[6]
+      value: 
+      objectReference: {fileID: 5974723986219194838}
+    - target: {fileID: 1328896480, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455017076576153889, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_text
+      value: How many months are in the year?
+      objectReference: {fileID: 0}
+    - target: {fileID: 575598158155489492, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099090950521513021, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_text
+      value: What is three subtracted from seven?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797345522368030364, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_text
+      value: How many months are in the year?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -189
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364929, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752696364934, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_Name
+      value: QuestionManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752901107136, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752901107138, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_text
+      value: 'What is the plural of cat? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932915498265062823, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6744577902412569498, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7902128763306266273, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327549959621891985, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+--- !u!114 &702991181731534608 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2366519752901107138, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+  m_PrefabInstance: {fileID: 2960580107871881938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5974723986219194838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8934134659572519684, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+  m_PrefabInstance: {fileID: 2960580107871881938}
+  m_PrefabAsset: {fileID: 0}

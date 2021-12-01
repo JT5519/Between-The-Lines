@@ -26,12 +26,15 @@ public class MouseInteract : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     public int answerLinePlacedIn = -1;
     public AnswerManager AM;
 
+    private AudioSource sound;
+
     private void Start()
     {
         canvas = transform.parent.parent.GetComponent<Canvas>();
         rect = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         AM = GameObject.FindGameObjectWithTag("AnswerManager").GetComponent<AnswerManager>();
+        sound = GetComponent<AudioSource>();
     }
 
     //event handler when item is grabbed by the mouse
