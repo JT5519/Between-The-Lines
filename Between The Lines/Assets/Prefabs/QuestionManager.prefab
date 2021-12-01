@@ -49,7 +49,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.580122, y: -0.2724762}
+  m_Offset: {x: 10.252308, y: -18.779598}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -60,7 +60,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 51.75787, y: 16.513214}
+  m_Size: {x: 63.28692, y: 35.32374}
   m_EdgeRadius: 0
 --- !u!1 &763475454
 GameObject:
@@ -111,7 +111,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.30335045, y: 0.23823547}
+  m_Offset: {x: 5.1577435, y: -13.414564}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -122,7 +122,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 75.760864, y: 17.534637}
+  m_Size: {x: 112.16829, y: 44.840237}
   m_EdgeRadius: 0
 --- !u!1 &1044435708
 GameObject:
@@ -173,7 +173,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32920074, y: -0.2724762}
+  m_Offset: {x: 17.62275, y: -17.869421}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -184,7 +184,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 54.30359, y: 16.513214}
+  m_Size: {x: 82.822876, y: 38.357708}
   m_EdgeRadius: 0
 --- !u!1 &1328896480
 GameObject:
@@ -276,7 +276,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3291626, y: -0.2724762}
+  m_Offset: {x: 12.76836, y: -17.262623}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -287,7 +287,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 31.392212, y: 16.513214}
+  m_Size: {x: 46.562035, y: 40.78483}
   m_EdgeRadius: 0
 --- !u!1 &1491877600
 GameObject:
@@ -338,7 +338,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.0162048, y: -0.2724762}
+  m_Offset: {x: 17.275759, y: -18.172813}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -349,7 +349,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 28.26561, y: 16.513214}
+  m_Size: {x: 32.51314, y: 37.750877}
   m_EdgeRadius: 0
 --- !u!1 &1851743267
 GameObject:
@@ -400,7 +400,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.8076096, y: -0.2724762}
+  m_Offset: {x: 8.631615, y: -23.33053}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -411,7 +411,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 113.49136, y: 16.513214}
+  m_Size: {x: 125.02043, y: 45.63917}
   m_EdgeRadius: 0
 --- !u!1 &2366519752696364934
 GameObject:
@@ -541,8 +541,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'What is the plural of cat? '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0adfe9f7e9d5225458e662a002e9f218, type: 2}
-  m_sharedMaterial: {fileID: 5700173899595069941, guid: 0adfe9f7e9d5225458e662a002e9f218, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4b2af251fb4ad7541a510208b5663604, type: 2}
+  m_sharedMaterial: {fileID: -6618954060496181998, guid: 4b2af251fb4ad7541a510208b5663604, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -566,8 +566,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
