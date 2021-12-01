@@ -26,10 +26,12 @@ public class AnswerManager : MonoBehaviour
     public GameObject incorrectFeedback;
     [SerializeField] private float timeForFeedback = 3;
     public bool changedSinceCheck;
+
     public bool round1;
     public GameManager GM;
     private TMP_Text answerCounter;
 
+    Coroutine routineController;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,7 @@ public class AnswerManager : MonoBehaviour
         changedSinceCheck = true;
         correctAnswer = answers1;
         answerCounter = transform.GetComponentInChildren<TMP_Text>();
+        routineController = null;
     }
 
     // Update is called once per frame
@@ -66,7 +69,7 @@ public class AnswerManager : MonoBehaviour
 
         if (!empty && !solved && changedSinceCheck)
         {
-            StartCoroutine(WrongAnswer());
+            routineController = StartCoroutine(WrongAnswer());
             changedSinceCheck = false;
         }
 
@@ -74,6 +77,13 @@ public class AnswerManager : MonoBehaviour
         if (solved && !beenSolved)
         {
             Debug.Log("Solved!");
+            //if wrong answer feedback is still showing when right answer is entered
+            if(routineController!=null)
+            {
+                StopCoroutine(routineController);
+                incorrectFeedback.SetActive(false);
+                routineController = null;
+            }
             StartCoroutine(CorrectAnswer());
         }
     }
