@@ -32,6 +32,7 @@ public class AnswerManager : MonoBehaviour
     private TMP_Text answerCounter;
 
     Coroutine routineController;
+    public AnswerLine[] answerLines;
     // Start is called before the first frame update
     void Start()
     {

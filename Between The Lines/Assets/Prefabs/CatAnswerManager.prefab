@@ -323,8 +323,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answers1: 6300610074007300
-  answers2: 
-  answers3: 
+  answers2: 66006f0075007200
+  answers3: 7400770065006c0076006500
   correctAnswer: 
   answerSlots: 
   letterGroup1: {fileID: 0}
@@ -333,9 +333,28 @@ MonoBehaviour:
   question1: {fileID: 0}
   question2: {fileID: 0}
   question3: {fileID: 0}
-  question1Colliders: []
-  question2Colliders: []
-  question3Colliders: []
+  question1Colliders:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  question2Colliders:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  question3Colliders:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   QM: {fileID: 0}
   beenSolved: 0
   correctFeedback: {fileID: 0}
@@ -344,6 +363,13 @@ MonoBehaviour:
   changedSinceCheck: 0
   round1: 1
   GM: {fileID: 0}
+  answerLines:
+  - {fileID: 1921778012064196205}
+  - {fileID: 1921778012471412356}
+  - {fileID: 1921778012594770235}
+  - {fileID: 1921778013300845656}
+  - {fileID: 2863963660173997762}
+  - {fileID: 4881346081322167147}
 --- !u!1 &1921778013300845658
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &612945224924595360
 RectTransform:
   m_ObjectHideFlags: 0
@@ -674,7 +700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5695294981325765861
 RectTransform:
   m_ObjectHideFlags: 0
