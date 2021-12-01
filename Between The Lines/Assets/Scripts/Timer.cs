@@ -6,8 +6,12 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     private TextMeshProUGUI timerText;
+    public float maxTime = 180;
     public float timer;
     private bool gameOver;
+    public float multiplier;
+    private float maxMultiplier = 2;
+    private float multiplierTimer = 0;
 
     //public float timerLimitSeconds;
 
@@ -26,7 +30,8 @@ public class Timer : MonoBehaviour
 
         if (timer > 0 && !gameOver)
         {
-            timer -= Time.deltaTime;
+            timer -= Time.deltaTime + (Time.deltaTime * multiplier);
+            multiplierTimer += Time.deltaTime;
 
             float minutes = Mathf.FloorToInt(timer / 60);
             float seconds = Mathf.FloorToInt(timer % 60);
@@ -40,6 +45,13 @@ public class Timer : MonoBehaviour
                 timerText.text = minutes + ":" + seconds;
             }
 
+            //Every 5 seconds, increase the speed
+            if (multiplierTimer >= 5 && multiplier < maxMultiplier)
+            {
+                multiplier += .2f;
+                multiplierTimer = 0;
+            }
+
         }
         else if (gameOver)
         {
@@ -51,4 +63,5 @@ public class Timer : MonoBehaviour
         }
 
     }
+
 }

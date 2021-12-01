@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class AnswerScrambler : MonoBehaviour
 {
@@ -10,17 +11,21 @@ public class AnswerScrambler : MonoBehaviour
     MouseInteract[] letterMouseInteract; //Array of text mesh mouse interactions
 
     public ShockwaveSpawner shockwaveScript;
+
+    private Rect screenBounds; //current screen size rectangle
+    private Vector2[] initialAnchoredPositions; //initial letter positions 
     private void Start()
     {
-        //Fill the array with text meshes' mouse interactions
-        letterMouseInteract = new MouseInteract[textMesh.Length];
-
+        letterMouseInteract = new MouseInteract[textMesh.Length]; 
+        initialAnchoredPositions = new Vector2[textMesh.Length];
+        //Filling up both arrays with initial values
         for(int i = 0; i < textMesh.Length; i++)
         {
             letterMouseInteract[i] = textMesh[i].GetComponent<MouseInteract>();
+            initialAnchoredPositions[i] = textMesh[i].rectTransform.anchoredPosition;
         }
-
-        //shockwaveScript = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Shockwave>();
+        //current screen size
+        screenBounds = new Rect(0, 0, Screen.width, Screen.height);
     }
     void Update()
     {
@@ -29,8 +34,11 @@ public class AnswerScrambler : MonoBehaviour
         {
             if(!letterMouseInteract[i].GetLetterHeldByCursor() && !letterMouseInteract[i].GetLetterInPlace() && !inWavePath(textMesh[i]))
             {
-                Vector3 offset = Wobble(Time.time + i);
-                textMesh[i].transform.position += offset;
+                //if letter goes out of the screen, reset it back to its initial position
+                if (!screenBounds.Contains(textMesh[i].transform.position))
+                    textMesh[i].rectTransform.anchoredPosition = initialAnchoredPositions[i];
+                Vector2 offset = Wobble(Time.time + i);
+                textMesh[i].rectTransform.anchoredPosition += offset;
             }
            
         }
@@ -41,6 +49,8 @@ public class AnswerScrambler : MonoBehaviour
     }
     bool inWavePath(TMP_Text meshToCheck)
     {
+        if (SceneManager.GetActiveScene().name == "CoreMinigame")
+            return false;
         if (shockwaveScript.objectsShockwaveCollidesWith.Contains(meshToCheck.gameObject))
             return true;
         return false;

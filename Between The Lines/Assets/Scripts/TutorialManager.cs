@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
-    [SerializeField] private Text[] tutorialText;
+    [SerializeField] private GameObject[] tutorialText;
     [SerializeField] private Text textPlaceHold;
 
     [SerializeField] private Button previousButton;
@@ -22,19 +22,19 @@ public class TutorialManager : MonoBehaviour
 
     private int tutorialIndex = 0;
 
-    private void Start()
-    {
-        UpdateText();
+    void Start()
+    {       
         nextButtonText = nextButton.GetComponentInChildren<Text>();
         backgroundImage = backgroundPanel.GetComponent<Image>();
-
         originalSprite = backgroundImage.sprite;
+
+        UpdateText();
     }
 
-    private void Update()
+    void Update()
     {
-        UpdateButtons();
-
+        //UpdateButtons();
+       
         //Change background past the title page
         if (tutorialIndex > 0)
             backgroundImage.sprite = blankBoardSprite;
@@ -47,10 +47,13 @@ public class TutorialManager : MonoBehaviour
     /// </summary>
     void UpdateText()  
     {
-        textPlaceHold.font = tutorialText[tutorialIndex].font;
-        textPlaceHold.alignment = tutorialText[tutorialIndex].alignment;
-        textPlaceHold.color = tutorialText[tutorialIndex].color;
-        textPlaceHold.text = tutorialText[tutorialIndex].text;
+        Text currentText = tutorialText[tutorialIndex].GetComponent<Text>();
+        textPlaceHold.font = currentText.font;
+        textPlaceHold.alignment = currentText.alignment;
+        textPlaceHold.color = currentText.color;
+        textPlaceHold.text = currentText.text;
+
+        UpdateButtons();
     }
 
     void UpdateButtons()
@@ -61,11 +64,11 @@ public class TutorialManager : MonoBehaviour
         else
             previousButton.gameObject.SetActive(true);
 
-        //Change the next button text on the last page of the tutorial
-        if (tutorialIndex >= tutorialText.Length - 1)
-            nextButtonText.text = "Play Game";
-        else
-            nextButtonText.text = "Next Page";
+        //Checks to see if the question has an answer
+        TutorialButtonAnswer answer = tutorialText[tutorialIndex].GetComponent<TutorialButtonAnswer>();
+        string buttonText = answer ? answer.GetButtonText() : "Next Page";
+
+        nextButtonText.text = buttonText;
     }
 
     /// <summary>

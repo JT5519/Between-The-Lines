@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     private GameObject timer;
     private float time;
     private int goal;
-    private int numOfWords;
+    public int numOfWords;
     private GameObject answerManager;
     public bool gameOver;
     [SerializeField] private int nextSceneID;
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         //Checks if the player has gotten a word on the page
         if(beenSolved == true)
         {
-            numOfWords = numOfWords + 1;
+            //numOfWords = numOfWords + 1;
         }
 
         //Triggers game over event if the player fails to get three words before time runs out
@@ -54,8 +54,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator ChangeScene()
+    public IEnumerator ChangeScene()
     {
+        gameOver = true;
         yield return new WaitForSeconds(timeBetweenScenes);
         SceneManager.LoadScene(nextSceneID);
     }
