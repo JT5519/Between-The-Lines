@@ -201,6 +201,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1536247954}
     m_Modifications:
+    - target: {fileID: 7680671315329358380, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b2af251fb4ad7541a510208b5663604, type: 2}
+    - target: {fileID: 7680671315329358380, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680671315329358381, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680671315329358382, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680671316302553712, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b2af251fb4ad7541a510208b5663604, type: 2}
+    - target: {fileID: 7680671316302553712, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680671316302553713, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680671316302553714, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7680671316439892917, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1131,7 +1163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1062406415403527731, guid: 0e1846986d5df6d4dac1203e3a521d48, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 107
+      value: 117.3
       objectReference: {fileID: 0}
     - target: {fileID: 1062406415403527731, guid: 0e1846986d5df6d4dac1203e3a521d48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1245,6 +1277,10 @@ PrefabInstance:
     - target: {fileID: 2366519752696364934, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
       propertyPath: m_Name
       value: QuestionManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2366519752901107138, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c61119e41db5b847a25e218fb569915, type: 3}
