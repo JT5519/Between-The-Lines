@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class AnswerScrambler : MonoBehaviour
 {
@@ -48,6 +49,8 @@ public class AnswerScrambler : MonoBehaviour
     }
     bool inWavePath(TMP_Text meshToCheck)
     {
+        if (SceneManager.GetActiveScene().name == "CoreMinigame")
+            return false;
         if (shockwaveScript.objectsShockwaveCollidesWith.Contains(meshToCheck.gameObject))
             return true;
         return false;

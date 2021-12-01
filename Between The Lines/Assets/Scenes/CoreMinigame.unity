@@ -464,6 +464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShockwaveSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 5889934072426347833, guid: 9d7017bdc49cd1648b35b0585e608dca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5889934072426347834, guid: 9d7017bdc49cd1648b35b0585e608dca, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

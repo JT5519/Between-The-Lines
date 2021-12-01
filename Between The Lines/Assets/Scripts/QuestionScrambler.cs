@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using System.Linq;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class QuestionScrambler : MonoBehaviour
 {
@@ -108,6 +109,8 @@ public class QuestionScrambler : MonoBehaviour
     }
     bool inWavePath(int wordIndex)
     {
+        if (SceneManager.GetActiveScene().name == "CoreMinigame")
+            return false;
         if (shockwaveScript.objectsShockwaveCollidesWith.Contains(wordColliders[wordIndex]))
             return true;
         return false;

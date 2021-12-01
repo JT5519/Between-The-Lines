@@ -99,7 +99,11 @@ public class AnswerManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         correctFeedback.SetActive(false);
         GM.numOfWords++;
-
+        //resetting answer lines as empty
+        foreach(AnswerLine aL in answerLines)
+        {
+            aL.SetLineFilled();
+        }
         if (GM.numOfWords == 1)
         {
             answerSlots = new char[answers2.Length];

@@ -61,7 +61,7 @@ public class MouseInteract : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         {
             Debug.Log(gameObject.name + " being dragged grabbed");
             //scaling of canvas matters for movement delta
-            rect.anchoredPosition += eventData.delta;
+            rect.anchoredPosition += eventData.delta/canvas.scaleFactor;
         }
 
     }
