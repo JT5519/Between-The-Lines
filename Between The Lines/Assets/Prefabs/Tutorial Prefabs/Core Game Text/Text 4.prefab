@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5255992367377086233}
   - component: {fileID: 8798063495716680806}
   - component: {fileID: 6736890547222482635}
+  - component: {fileID: 1380561862665383490}
   m_Layer: 5
   m_Name: Text 4
   m_TagString: Untagged
@@ -66,12 +67,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
+    m_Font: {fileID: 12800000, guid: caf20f1033d6bf0468550539c0f3278d, type: 3}
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 4
+    m_MaxSize: 45
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -79,3 +80,16 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Does that sound alright to you?
+--- !u!114 &1380561862665383490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3959907088949736404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d565d766f9593940b163142becf06e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerButtonText: Ya.
