@@ -92,4 +92,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d565d766f9593940b163142becf06e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answerButtonText: Back to Menu
+  answerButtonText: To Menu
