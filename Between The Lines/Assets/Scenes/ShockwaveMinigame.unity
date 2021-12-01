@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: 0
-  nextSceneID: 0
+  nextSceneID: 4
   timeBetweenScenes: 0
 --- !u!4 &1864046143
 Transform:

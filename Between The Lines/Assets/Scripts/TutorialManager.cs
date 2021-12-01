@@ -68,11 +68,7 @@ public class TutorialManager : MonoBehaviour
         TutorialButtonAnswer answer = tutorialText[tutorialIndex].GetComponent<TutorialButtonAnswer>();
         string buttonText = answer ? answer.GetButtonText() : "Next Page";
 
-        //Change the next button text on the last page of the tutorial
-        if (tutorialIndex >= tutorialText.Length - 1)
-            nextButtonText.text = "Play Game";
-        else
-            nextButtonText.text = buttonText;
+        nextButtonText.text = buttonText;
     }
 
     /// <summary>

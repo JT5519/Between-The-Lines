@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShockwaveMinigame.unity
     guid: de9be1ba2562d4545b17874628b1bf83
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: bee24dd472fc79b4c95b4bd30447fb96
   m_configObjects: {}
