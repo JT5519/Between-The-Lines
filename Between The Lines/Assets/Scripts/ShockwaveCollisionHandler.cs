@@ -19,6 +19,6 @@ public class ShockwaveCollisionHandler : MonoBehaviour
             other.gameObject.GetComponent<AudioSource>().Play();
             audioPlaying = true;
         }
-        Debug.Log("Triggered object: " + other.gameObject.name);
+        //Debug.Log("Triggered object: " + other.gameObject.name);
     }
 }

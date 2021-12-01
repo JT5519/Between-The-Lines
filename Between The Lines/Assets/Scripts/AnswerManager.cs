@@ -77,7 +77,7 @@ public class AnswerManager : MonoBehaviour
         //When Solved
         if (solved && !beenSolved)
         {
-            Debug.Log("Solved!");
+            //Debug.Log("Solved!");
             //if wrong answer feedback is still showing when right answer is entered
             if(routineController!=null)
             {

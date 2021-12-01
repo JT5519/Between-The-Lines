@@ -42,7 +42,7 @@ public class MouseInteract : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         if (!cursorHoldsALetter && !iAmTheLetterHeldByCursor && eventData.button == PointerEventData.InputButton.Left)
         {
-            Debug.Log(gameObject.name + " grabbed");
+            //Debug.Log(gameObject.name + " grabbed");
             cursorHoldsALetter = true;
             iAmTheLetterHeldByCursor = true;
             canvasGroup.blocksRaycasts = false;
@@ -59,7 +59,7 @@ public class MouseInteract : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         //if current letter is the one grabbed, then drag it along with the mouse
         if (iAmTheLetterHeldByCursor && cursorHoldsALetter && eventData.button == PointerEventData.InputButton.Left)
         {
-            Debug.Log(gameObject.name + " being dragged grabbed");
+            //Debug.Log(gameObject.name + " being dragged grabbed");
             //scaling of canvas matters for movement delta
             rect.anchoredPosition += eventData.delta/canvas.scaleFactor;
         }
@@ -71,7 +71,7 @@ public class MouseInteract : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     {
         if (iAmTheLetterHeldByCursor && cursorHoldsALetter && eventData.button == PointerEventData.InputButton.Left)
         {
-            Debug.Log(gameObject.name + " released");
+            //Debug.Log(gameObject.name + " released");
             cursorHoldsALetter = false;
             iAmTheLetterHeldByCursor = false;
             canvasGroup.blocksRaycasts = true;
