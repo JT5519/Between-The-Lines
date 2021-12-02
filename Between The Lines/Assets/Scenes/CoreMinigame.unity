@@ -623,6 +623,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1536247954}
     m_Modifications:
+    - target: {fileID: 6906617037747637238, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7680671315329358382, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -721,6 +725,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+--- !u!1 &1180599135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6906617037747637238, guid: 4bde86ff83a942345afca091a58aa684, type: 3}
+  m_PrefabInstance: {fileID: 1180599134}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1263857690 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2949898097895879936, guid: 92117aa4fcc9bc243a2f7298e4f0e71e, type: 3}
@@ -1079,6 +1088,7 @@ MonoBehaviour:
   gameOver: 0
   nextSceneID: 2
   timeBetweenScenes: 3
+  gameOverObject: {fileID: 1180599135}
 --- !u!4 &1864046143
 Transform:
   m_ObjectHideFlags: 0

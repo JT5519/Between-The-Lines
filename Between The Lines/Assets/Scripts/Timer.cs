@@ -55,11 +55,8 @@ public class Timer : MonoBehaviour
         }
         else if (gameOver)
         {
-            timer += Time.deltaTime;
-        }
-        else
-        {
             timerText.text = "0:00";
+            timer += Time.deltaTime;
         }
 
     }
