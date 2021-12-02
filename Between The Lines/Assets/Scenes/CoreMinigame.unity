@@ -1437,7 +1437,7 @@ PrefabInstance:
       objectReference: {fileID: 794726056}
     - target: {fileID: 2949898097895879938, guid: 92117aa4fcc9bc243a2f7298e4f0e71e, type: 3}
       propertyPath: wobbleAmplitude
-      value: 0.1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2949898097895879939, guid: 92117aa4fcc9bc243a2f7298e4f0e71e, type: 3}
       propertyPath: m_Pivot.x
@@ -1546,7 +1546,7 @@ PrefabInstance:
       objectReference: {fileID: 794726056}
     - target: {fileID: 8969473934195336010, guid: 8157f214d31b7aa478c60757122f3c3c, type: 3}
       propertyPath: wobbleAmplitude
-      value: 0.1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8969473934195336011, guid: 8157f214d31b7aa478c60757122f3c3c, type: 3}
       propertyPath: m_Pivot.x
@@ -1785,7 +1785,7 @@ PrefabInstance:
       objectReference: {fileID: 794726056}
     - target: {fileID: 3016135770534637772, guid: b23c6ffeb729a7245bde2a53ee15d47b, type: 3}
       propertyPath: wobbleAmplitude
-      value: 0.1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3016135770534637773, guid: b23c6ffeb729a7245bde2a53ee15d47b, type: 3}
       propertyPath: m_Pivot.x
