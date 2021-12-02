@@ -226,6 +226,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ToPreviousPage
       objectReference: {fileID: 0}
+    - target: {fileID: 7564198756543573053, guid: 9b21034485d1378439b68b55add6146c, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: caf20f1033d6bf0468550539c0f3278d, type: 3}
+    - target: {fileID: 7564198756543573053, guid: 9b21034485d1378439b68b55add6146c, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564198756543573053, guid: 9b21034485d1378439b68b55add6146c, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564198756543573053, guid: 9b21034485d1378439b68b55add6146c, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b21034485d1378439b68b55add6146c, type: 3}
 --- !u!224 &292419141 stripped
@@ -425,6 +441,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2142469308}
     m_Modifications:
+    - target: {fileID: 9133312834235585980, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: caf20f1033d6bf0468550539c0f3278d, type: 3}
+    - target: {fileID: 9133312834235585980, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133312834235585980, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133312834235585980, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133312834235585981, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133312834235585981, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133312834235585981, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133312834235585981, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133312834235585981, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133312834235585981, guid: 63f57655c25cda640b2b214fda868118, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 74
+      objectReference: {fileID: 0}
     - target: {fileID: 9133312834340696944, guid: 63f57655c25cda640b2b214fda868118, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

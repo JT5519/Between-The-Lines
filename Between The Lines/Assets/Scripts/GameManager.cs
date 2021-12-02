@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver;
     [SerializeField] private int nextSceneID;
     [SerializeField] private float timeBetweenScenes;
+    public GameObject gameOverObject;
 
 
     // Start is called before the first frame update
@@ -38,17 +39,19 @@ public class GameManager : MonoBehaviour
         }
 
         //Triggers game over event if the player fails to get three words before time runs out
-        if(time == 0 && numOfWords != goal)
+        if (timer.GetComponent<Timer>().timer <= 0 && !gameOver)
         {
             int wordsLeft = goal - numOfWords;
-            //Debug.Log("Sorry, You Failed..." + "\n" + "You had " + wordsLeft + " words to go.");
+            Debug.Log("Sorry, You Failed..." + "\n" + "You had " + wordsLeft + " words to go.");
+            gameOverObject.SetActive(true);
             gameOver = true;
+            StartCoroutine(ResetGame());
         }
 
         //Checks if the player has reached the goal -- getting three words on the page
-        if(numOfWords == goal)
+        if (numOfWords == goal)
         {
-            //Debug.Log("Way to Go!" + "\n" + "You got three in a row!");
+            Debug.Log("Way to Go!" + "\n" + "You got three in a row!");
             gameOver = true;
             StartCoroutine(ChangeScene());
         }
@@ -60,4 +63,12 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenScenes);
         SceneManager.LoadScene(nextSceneID);
     }
+
+    IEnumerator ResetGame()
+    {
+        gameOver = true;
+        yield return new WaitForSeconds(timeBetweenScenes);
+        SceneManager.LoadScene(0);
+    }
 }
+
